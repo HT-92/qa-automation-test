@@ -11,6 +11,11 @@ pipeline {
                 sh 'npm install'
             }
         }
+        stage('Fix permissions') {
+            steps {
+                sh 'chmod +x node_modules/.bin/playwright'
+            }
+        }
         stage('Install Playwright browsers') {
             steps {
                 sh 'npx playwright install --with-deps'
