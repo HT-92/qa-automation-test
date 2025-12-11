@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:20'
-            args '-u root'
-        }
-    }
+    agent any
     stages {
         stage('Install dependencies') {
             steps {
