@@ -1,7 +1,6 @@
 {
   "name": "qa-mockup-automation-project",
   "version": "1.0.0",
-  "main": "playwright.config.js",
   "directories": {
     "test": "tests"
   },
