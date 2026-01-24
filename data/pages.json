@@ -1,6 +1,10 @@
 {
+
     "page1URL": "https://www.apple.com/",
     "page1Name": "Apple",
     "page2URL": "https://www.lenovo.com/us/en/pc/",
-    "page2Name": "Laptops, PCs, Desktops, Tablets, Monitors, & More | Lenovo US"
+    "page2Name": "Laptops, PCs, Desktops, Tablets, Monitors, & More | Lenovo US",
+
+    "pageURL": "https://dev.games.amusnet.io/?gin=464&dev=true&pn=&pCode=Dev_Casino_Seamless_RJ_Portal_EUR",
+    "pageName": "Game Platform"
 }
