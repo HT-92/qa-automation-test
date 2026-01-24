@@ -1,0 +1,15 @@
+# Playwright test results & reports
+playwright-report/
+test-results/
+report/
+
+# Playwright cache
+.playwright/
+
+# Node dependencies
+node_modules/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
