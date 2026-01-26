@@ -49,6 +49,7 @@ test ('Buy Bonus with different bet leading to FS', async ({ page }) => {
         });
     };
 
+
     for (let i = 0; i < 4; i++) {
         await betButton.click();
         if (i < 4) await delay(400);
