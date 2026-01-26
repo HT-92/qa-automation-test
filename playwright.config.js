@@ -4,7 +4,7 @@ module.exports = {
     use: {
         headless: true
     },
-    reporter: [['html', {outputFolder: 'report'}]]
+    reporter: [['html', {outputFolder: 'playwright-report', open: 'never'}]]
 };
 
 
