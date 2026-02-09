@@ -15,8 +15,9 @@ test ('Buy Bonus with different bet leading to FS', async ({ page }) => {
         await expect(locator).toBeVisible();
         
         //fixture to always turn sound off
+        const frameTwo = await page.frameLocator('iframe');
+        const gameFrameTwo = page.frameLocator('iframe[src*="game"], iframe[src*="launcher"]');
         await page.frameLocator('iframe[name="gameIframe"]').locator('#sound-button').click();
-    
 
         //fixture to select a default bet
         const frame = page.frameLocator('iframe[name="gameIframe"]');

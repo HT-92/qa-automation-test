@@ -19,4 +19,15 @@ test('Select bet then start Autoplay', async ({ page }) => {
 Репорт в дженкинс и репорт като HTML (трябва да е като артефакт в дженкинс)
 След като ги има тези. Създаваш дженкинс пайплаин с Jenkins file и пускаш тестовете през него ... също трябва да бъде запазен репортинга
 След като това е готово, ще минеш проекта на TypeScript]
+
+Update:
+-DONE- install Stage View plugin in Jenkins
+-install pw pluhin for Jenkins: I Instlalled HMTL Plugin
+-DONE- I THINK - fix your fixtures (in PW config.js there should be a lot more info. Check your original project from theUdemy course)
+-DONE- and fianlly run the test through a report
+
+
+QUESTIONS:
+should I sta with .js or .ts and hat's the difference?
+
 **/
