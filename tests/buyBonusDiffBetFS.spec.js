@@ -16,22 +16,21 @@ test ('Buy Bonus with different bet leading to FS', async ({ page }) => {
 
         //fixture to select a default bet
         const frame = page.frameLocator('iframe[name="gameIframe"]');
-        
-            await frame.locator('#bet-option-button').click();
-        
-        const bet100 = frame.locator('#bet-option-100');
-        const bet20 = frame.locator('#bet-option-20');
+        const betOptionButton = frame.locator('#bet-option-button');
 
-        if (await bet100.isVisible()) {
-            await bet100.click();
+            await expect (betOptionButton).toBeVisible({ timeout: 60000 });
+            await betOptionButton.click();
+        
+        const bet4 = frame.locator('#bet-option-400');
+        const bet2 = frame.locator('#bet-option-200');
+
+        if (await bet4.count() > 0) {
+            await bet4.click();
         } else {
-            await bet20.click();
+            await bet2.click();
         }
         
-        /*const defaultBetSelection = page.frameLocator('iframe[name="gameIframe"]').locator('#bet-option-100');
-        await defaultBetSelection.click();
-        >removed to improve with an IF scenario
-        */
+        await expect(frame.locator('#spin-button')).toBeEnabled();
 
 
     await page.frameLocator('iframe[name="gameIframe"]').locator('#buy-bonus-button').click();
