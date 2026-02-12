@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
     agent any
 
     stages {
@@ -7,7 +7,22 @@ pipeline {
                 checkout scm
             }
         }
+        */
+pipeline {
+    agent {
+        docker {
+            image 'mcr.microsoft.com/playwright:v1.42.1-jammy'
+            args '--ipc=host'
+        }
+    }
 
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+        
         stage('Install dependencies') {
             steps {
                 sh '''
