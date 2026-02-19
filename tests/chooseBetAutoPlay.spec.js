@@ -25,6 +25,7 @@ Update:
 -install pw pluhin for Jenkins: I Instlalled HMTL Plugin
 -DONE- I THINK - fix your fixtures (in PW config.js there should be a lot more info. Check your original project from theUdemy course)
 -DONE- and fianlly run the test through a report
+- Always install DOcker (pipeline) plugin in Jenkins
 
 
 QUESTIONS:
