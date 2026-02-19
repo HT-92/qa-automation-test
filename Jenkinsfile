@@ -11,7 +11,7 @@
 pipeline {
     agent {
         docker {
-            image 'mcr.microsoft.com/playwright:v1.42.1-jammy'
+            image 'mcr.microsoft.com/playwright:v1.57.0-jammy'
             args '--ipc=host'
         }
     }
